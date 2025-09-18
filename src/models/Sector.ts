@@ -1,5 +1,5 @@
 import mongoose, { Schema, Document } from 'mongoose';
-import { Sector as SectorInterface } from '../types/index';
+import { Sector as SectorInterface } from '../types/index.js';
 
 export interface SectorDocument extends Omit<SectorInterface, 'id'>, Document {
   _id: mongoose.Types.ObjectId;

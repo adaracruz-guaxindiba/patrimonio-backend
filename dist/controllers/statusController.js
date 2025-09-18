@@ -1,4 +1,4 @@
-import { StatusModel } from '../models/Status';
+import { StatusModel } from '../models/Status.js';
 export const getAllStatuses = async (req, res) => {
     try {
         const statuses = await StatusModel.find().sort({ createdAt: -1 });

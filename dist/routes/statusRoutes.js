@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { getAllStatuses, createStatus, updateStatus, deleteStatus, toggleStatusActive } from '../controllers/statusController';
-import { authenticate, requireAdmin } from '../middleware/auth';
+import { getAllStatuses, createStatus, updateStatus, deleteStatus, toggleStatusActive } from '../controllers/statusController.js';
+import { authenticate, requireAdmin } from '../middleware/auth.js';
 const router = Router();
 // Todas as rotas requerem autenticação
 router.use(authenticate);

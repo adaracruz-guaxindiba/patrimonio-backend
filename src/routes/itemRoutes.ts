@@ -4,8 +4,8 @@ import {
   createItem,
   updateItem,
   deleteItem
-} from '../controllers/itemController';
-import { authenticate, requireAdmin } from '../middleware/auth';
+} from '../controllers/itemController.js';
+import { authenticate, requireAdmin } from '../middleware/auth.js';
 
 const router = Router();
 

@@ -1,5 +1,5 @@
 import mongoose, { Document } from 'mongoose';
-import { User as UserInterface } from '../types/index';
+import { User as UserInterface } from '../types/index.js';
 export interface UserDocument extends Omit<UserInterface, 'id'>, Document {
     _id: mongoose.Types.ObjectId;
 }

@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { getAllItems, createItem, updateItem, deleteItem } from '../controllers/itemController';
-import { authenticate, requireAdmin } from '../middleware/auth';
+import { getAllItems, createItem, updateItem, deleteItem } from '../controllers/itemController.js';
+import { authenticate, requireAdmin } from '../middleware/auth.js';
 const router = Router();
 // Todas as rotas requerem autenticação
 router.use(authenticate);

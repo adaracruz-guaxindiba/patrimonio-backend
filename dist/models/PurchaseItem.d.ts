@@ -1,5 +1,5 @@
 import mongoose, { Document } from 'mongoose';
-import { PurchaseItem as PurchaseItemInterface } from '../types/index';
+import { PurchaseItem as PurchaseItemInterface } from '../types/index.js';
 export interface PurchaseItemDocument extends Omit<PurchaseItemInterface, 'id'>, Document {
     _id: mongoose.Types.ObjectId;
 }

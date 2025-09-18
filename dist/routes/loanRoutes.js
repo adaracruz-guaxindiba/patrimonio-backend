@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { getAllLoans, createLoan, updateLoan, deleteLoan } from '../controllers/loanController';
-import { authenticate, requireAdmin } from '../middleware/auth';
+import { getAllLoans, createLoan, updateLoan, deleteLoan } from '../controllers/loanController.js';
+import { authenticate, requireAdmin } from '../middleware/auth.js';
 const router = Router();
 // Todas as rotas requerem autenticação
 router.use(authenticate);

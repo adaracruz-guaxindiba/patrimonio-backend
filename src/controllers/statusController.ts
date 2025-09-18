@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { StatusModel } from '../models/Status';
+import { StatusModel } from '../models/Status.js';
 
 export const getAllStatuses = async (req: Request, res: Response) => {
   try {

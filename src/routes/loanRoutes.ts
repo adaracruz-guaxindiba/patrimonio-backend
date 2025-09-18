@@ -4,8 +4,8 @@ import {
   createLoan,
   updateLoan,
   deleteLoan
-} from '../controllers/loanController';
-import { authenticate, requireAdmin } from '../middleware/auth';
+} from '../controllers/loanController.js';
+import { authenticate, requireAdmin } from '../middleware/auth.js';
 
 const router = Router();
 

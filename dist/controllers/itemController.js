@@ -1,7 +1,7 @@
-import { ItemModel } from '../models/Item';
-import { SectorModel } from '../models/Sector';
-import { BrandModel } from '../models/Brand';
-import { StatusModel } from '../models/Status';
+import { ItemModel } from '../models/Item.js';
+import { SectorModel } from '../models/Sector.js';
+import { BrandModel } from '../models/Brand.js';
+import { StatusModel } from '../models/Status.js';
 export const getAllItems = async (req, res) => {
     try {
         const items = await ItemModel.find().sort({ createdAt: -1 });

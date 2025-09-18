@@ -5,8 +5,8 @@ import {
   updateStatus,
   deleteStatus,
   toggleStatusActive
-} from '../controllers/statusController';
-import { authenticate, requireAdmin } from '../middleware/auth';
+} from '../controllers/statusController.js';
+import { authenticate, requireAdmin } from '../middleware/auth.js';
 
 const router = Router();
 

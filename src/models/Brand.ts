@@ -1,5 +1,5 @@
 import mongoose, { Schema, Document } from 'mongoose';
-import { Brand as BrandInterface } from '../types/index';
+import { Brand as BrandInterface } from '../types/index.js';
 
 export interface BrandDocument extends Omit<BrandInterface, 'id'>, Document {
   _id: mongoose.Types.ObjectId;

@@ -1,15 +1,15 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import { connectDatabase } from './config/database';
+import { connectDatabase } from './config/database.js';
 // Importar rotas
-import userRoutes from './routes/userRoutes';
-import sectorRoutes from './routes/sectorRoutes';
-import brandRoutes from './routes/brandRoutes';
-import statusRoutes from './routes/statusRoutes';
-import itemRoutes from './routes/itemRoutes';
-import loanRoutes from './routes/loanRoutes';
-import purchaseItemRoutes from './routes/purchaseItemRoutes';
+import userRoutes from './routes/userRoutes.js';
+import sectorRoutes from './routes/sectorRoutes.js';
+import brandRoutes from './routes/brandRoutes.js';
+import statusRoutes from './routes/statusRoutes.js';
+import itemRoutes from './routes/itemRoutes.js';
+import loanRoutes from './routes/loanRoutes.js';
+import purchaseItemRoutes from './routes/purchaseItemRoutes.js';
 // Carregar variáveis de ambiente
 dotenv.config();
 const app = express();

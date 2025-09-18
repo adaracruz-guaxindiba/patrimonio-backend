@@ -1,6 +1,6 @@
 import bcrypt from 'bcryptjs';
-import { UserModel } from '../models/User';
-import { connectDatabase } from '../config/database';
+import { UserModel } from '../models/User.js';
+import { connectDatabase } from '../config/database.js';
 class DatabaseInitializer {
     /**
      * Cria usuário admin padrão se não existir

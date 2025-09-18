@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { getAllSectors, createSector, updateSector, deleteSector, toggleSectorActive } from '../controllers/sectorController';
-import { authenticate, requireAdmin } from '../middleware/auth';
+import { getAllSectors, createSector, updateSector, deleteSector, toggleSectorActive } from '../controllers/sectorController.js';
+import { authenticate, requireAdmin } from '../middleware/auth.js';
 const router = Router();
 // Todas as rotas requerem autenticação
 router.use(authenticate);

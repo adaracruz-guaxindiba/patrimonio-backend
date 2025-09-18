@@ -1,5 +1,5 @@
-import { SectorModel } from '../models/Sector';
-import { transformDocument, transformDocuments } from '../utils/transform';
+import { SectorModel } from '../models/Sector.js';
+import { transformDocument, transformDocuments } from '../utils/transform.js';
 export const getAllSectors = async (req, res) => {
     try {
         const sectors = await SectorModel.find().sort({ createdAt: -1 });

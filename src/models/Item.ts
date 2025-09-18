@@ -1,5 +1,5 @@
 import mongoose, { Schema, Document } from 'mongoose';
-import { Item as ItemInterface } from '../types/index';
+import { Item as ItemInterface } from '../types/index.js';
 
 export interface ItemDocument extends Omit<ItemInterface, 'id'>, Document {
   _id: mongoose.Types.ObjectId;

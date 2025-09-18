@@ -1,9 +1,9 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import { UserModel } from '../models/User';
-import { transformDocument, transformDocuments } from '../utils/transform';
-import { emailService } from '../services/emailService';
-import { tokenService } from '../services/tokenService';
+import { UserModel } from '../models/User.js';
+import { transformDocument, transformDocuments } from '../utils/transform.js';
+import { emailService } from '../services/emailService.js';
+import { tokenService } from '../services/tokenService.js';
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key';
 export const getAllUsers = async (req, res) => {
     try {

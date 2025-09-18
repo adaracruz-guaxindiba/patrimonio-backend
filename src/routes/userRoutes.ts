@@ -11,8 +11,8 @@ import {
   resetPassword,
   createUserWithTempPassword,
   changePassword
-} from '../controllers/userController';
-import { authenticateToken, requireAdmin, requireOwnershipOrAdmin } from '../middleware/authMiddleware';
+} from '../controllers/userController.js';
+import { authenticateToken, requireAdmin, requireOwnershipOrAdmin } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
 

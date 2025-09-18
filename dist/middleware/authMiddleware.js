@@ -1,4 +1,4 @@
-import { tokenService } from '../services/tokenService';
+import { tokenService } from '../services/tokenService.js';
 /**
  * Middleware para verificar autenticação JWT
  */

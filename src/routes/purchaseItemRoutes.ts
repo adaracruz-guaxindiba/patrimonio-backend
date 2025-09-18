@@ -4,8 +4,8 @@ import {
   createPurchaseItem,
   updatePurchaseItem,
   deletePurchaseItem
-} from '../controllers/purchaseItemController';
-import { authenticate, requireAdmin } from '../middleware/auth';
+} from '../controllers/purchaseItemController.js';
+import { authenticate, requireAdmin } from '../middleware/auth.js';
 
 const router = Router();
 

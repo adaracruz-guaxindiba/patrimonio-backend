@@ -5,8 +5,8 @@ import {
   updateBrand,
   deleteBrand,
   toggleBrandActive
-} from '../controllers/brandController';
-import { authenticate, requireAdmin } from '../middleware/auth';
+} from '../controllers/brandController.js';
+import { authenticate, requireAdmin } from '../middleware/auth.js';
 
 const router = Router();
 

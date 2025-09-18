@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { dbInitializer } from '../scripts/initDatabase';
+import { dbInitializer } from '../scripts/initDatabase.js';
 
 export const connectDatabase = async () => {
   try {

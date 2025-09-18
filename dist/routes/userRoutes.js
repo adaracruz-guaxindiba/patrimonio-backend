@@ -1,6 +1,6 @@
 import express from 'express';
-import { getAllUsers, getUserById, getUserByEmail, createUser, updateUser, deleteUser, loginUser, requestPasswordReset, resetPassword, createUserWithTempPassword, changePassword } from '../controllers/userController';
-import { authenticateToken, requireAdmin, requireOwnershipOrAdmin } from '../middleware/authMiddleware';
+import { getAllUsers, getUserById, getUserByEmail, createUser, updateUser, deleteUser, loginUser, requestPasswordReset, resetPassword, createUserWithTempPassword, changePassword } from '../controllers/userController.js';
+import { authenticateToken, requireAdmin, requireOwnershipOrAdmin } from '../middleware/authMiddleware.js';
 const router = express.Router();
 // Rotas públicas (sem autenticação)
 router.post('/login', loginUser);

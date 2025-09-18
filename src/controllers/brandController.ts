@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { BrandModel } from '../models/Brand';
+import { BrandModel } from '../models/Brand.js';
 
 export const getAllBrands = async (req: Request, res: Response) => {
   try {

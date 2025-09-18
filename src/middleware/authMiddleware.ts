@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { tokenService } from '../services/tokenService';
+import { tokenService } from '../services/tokenService.js';
 
 // Estender interface Request para incluir user
 declare global {

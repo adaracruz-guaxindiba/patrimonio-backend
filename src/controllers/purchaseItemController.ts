@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
-import { PurchaseItemModel } from '../models/PurchaseItem';
-import { ItemModel } from '../models/Item';
-import { UserModel } from '../models/User';
-import { transformDocument, transformDocuments } from '../utils/transform';
+import { PurchaseItemModel } from '../models/PurchaseItem.js';
+import { ItemModel } from '../models/Item.js';
+import { UserModel } from '../models/User.js';
+import { transformDocument, transformDocuments } from '../utils/transform.js';
 
 export const getAllPurchaseItems = async (req: Request, res: Response) => {
   try {

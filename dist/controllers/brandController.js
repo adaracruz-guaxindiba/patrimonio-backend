@@ -1,4 +1,4 @@
-import { BrandModel } from '../models/Brand';
+import { BrandModel } from '../models/Brand.js';
 export const getAllBrands = async (req, res) => {
     try {
         const brands = await BrandModel.find().sort({ createdAt: -1 });

@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { getAllBrands, createBrand, updateBrand, deleteBrand, toggleBrandActive } from '../controllers/brandController';
-import { authenticate, requireAdmin } from '../middleware/auth';
+import { getAllBrands, createBrand, updateBrand, deleteBrand, toggleBrandActive } from '../controllers/brandController.js';
+import { authenticate, requireAdmin } from '../middleware/auth.js';
 const router = Router();
 // Todas as rotas requerem autenticação
 router.use(authenticate);

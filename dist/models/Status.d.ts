@@ -1,5 +1,5 @@
 import mongoose, { Document } from 'mongoose';
-import { StatusItem as StatusInterface } from '../types/index';
+import { StatusItem as StatusInterface } from '../types/index.js';
 export interface StatusDocument extends Omit<StatusInterface, 'id'>, Document {
     _id: mongoose.Types.ObjectId;
 }

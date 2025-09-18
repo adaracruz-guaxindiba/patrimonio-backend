@@ -1,7 +1,7 @@
-import { LoanModel } from '../models/Loan';
-import { ItemModel } from '../models/Item';
-import { UserModel } from '../models/User';
-import { StatusModel } from '../models/Status';
+import { LoanModel } from '../models/Loan.js';
+import { ItemModel } from '../models/Item.js';
+import { UserModel } from '../models/User.js';
+import { StatusModel } from '../models/Status.js';
 export const getAllLoans = async (req, res) => {
     try {
         const loans = await LoanModel.find().sort({ createdAt: -1 });

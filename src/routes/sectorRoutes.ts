@@ -5,8 +5,8 @@ import {
   updateSector,
   deleteSector,
   toggleSectorActive
-} from '../controllers/sectorController';
-import { authenticate, requireAdmin } from '../middleware/auth';
+} from '../controllers/sectorController.js';
+import { authenticate, requireAdmin } from '../middleware/auth.js';
 
 const router = Router();
 
